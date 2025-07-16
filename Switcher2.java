@@ -87,17 +87,20 @@ int options = scanning.nextInt();
 switch (options) {
   
             case 1:
-                System.out.println("speeddials");;
+                System.out.println("typeOfView");
                 break;
             case 2:
-                System.out.println("hohoho");;
+                System.out.println("memoryStatus");
                 break;
                 default:
-                        System.out.println("SPEEDDIALS");;
+                        System.out.println(" LISTOFMENUFUNCTIONS");
         }
             break;
                      case 9:
-                        System.out.println("OPTIONS");
+                        System.out.println("SPEEDDIALS");
+                        break;
+                    case 10:
+                        System.out.println("VOICETAGS");
                         break;
                     default:
                         System.out.println("PHONEBOOKERROR");
@@ -105,6 +108,62 @@ switch (options) {
 
 break;
 case 2:System.out.println("MESSAGES") ;
+
+System.out.println ("PROMPTING YOU ENTER ANY NUMBER FROM 1 TO 10 TO CHOOSE MESSAGE SERVICES");
+
+String messageMenu =         """
+                               1.write messages
+                               2.inbox
+                               3. outbox
+                               4. pictureMessages
+                               5.templates
+                               6.smileys
+                               7. messageSettings
+                               8.Info service
+                               9.voiceMailboxNumber
+                               10.serviceCommandEditor
+                       """;
+
+System.out.println (messageMenu);
+
+int messages = scanning.nextInt();
+
+
+switch (messages) {
+  
+            case 1:
+                System.out.println("writeMessages");
+                break;
+            case 2:
+                System.out.println("Inbox");
+                break;
+            case 3:
+                System.out.println("outbox");
+                break;
+            case 4:
+                System.out.println("pictureMessages");
+                break;
+            case 5:
+                System.out.println("Templates");
+                break;
+             case 6:
+                System.out.println("smileys");
+                break;
+             case 7:
+                System.out.println("messageSettings");
+                break;
+             case 8:
+                System.out.println("InfoService");
+                break;
+             case 9:
+                System.out.println("voiceMailboxNumber");
+                break;
+            case 10:
+                System.out.println("serviceCommandEditor");
+                break;
+                default:
+                        System.out.println(" LISTOFMessageFUNCTIONS");
+        }
 break;
 case 3: System.out.println("CHAT");
 break;
@@ -113,6 +172,39 @@ break;
 case 5: System.out.println("TONES");
 break;
 case 6: System.out.println("SETTINGS");
+
+System.out.println ("PROMPTING YOU ENTER ANY NUMBER FROM 1 TO 4 TO CHOOSE PREFERRABLE SETTINGS");
+
+String settingsMenu =         """
+                               1.callSettings
+                               2.phoneSettings
+                               3.securitySettings
+                               4.restoreFactorySettings
+                       """;
+
+System.out.println (settingsMenu);
+
+int settings = scanning.nextInt();
+
+
+switch (settings) {
+  
+            case 1:
+                System.out.println("callSettings");
+                break;
+            case 2:
+                System.out.println("phoneSettings");
+                break;
+            case 3:
+                System.out.println("securitySettings");
+                break;
+            case 4:
+                System.out.println("restoreFactorySettings");
+                break;
+            
+                default:
+                        System.out.println(" LISTOFMessageFUNCTIONS");
+        }
 break;
 case 7: System.out.println("CALLDIVERT");
 break;
