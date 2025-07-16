@@ -169,6 +169,149 @@ break;
 case 3: System.out.println("CHAT");
 break;
 case 4: System.out.println("CALLREGISTER");
+
+System.out.println ("PROMPTING YOU ENTER ANY NUMBER FROM 1 TO 8 TO SELECT CALL REGISTER SERVICES");
+
+String callRegisterMenu =         """
+                               1.missedCalls
+                               2.receivedCalls
+                               3.dialledNumbers
+                               4.eraseRecentCallLists
+                               5.showCallDuration
+                               6.showCallCosts
+                               7.callCostSettings
+                               8.prepaidCredit
+                              
+                       """;
+
+System.out.println (callRegisterMenu);
+
+int callRegister = scanning.nextInt();
+
+
+switch (callRegister) {
+  
+            case 1:
+                System.out.println("missedCalls");
+                break;
+            case 2:
+                System.out.println("receivedCalls");
+                break;
+            case 3:
+                System.out.println("dialledNumbers");
+                break;
+            case 4:
+                System.out.println("eraseRecentCallLists");
+                break;
+            case 5:
+                System.out.println("showCallDuration");
+
+System.out.println ("PROMPTING YOU ENTER ANY NUMBER FROM 1 TO 5 TO CHOOSE CALL DURATION OPTIONS");
+
+String callDurationMenu =         """
+                               1.lastCallDuration
+                               2.allCallsDuration
+                               3.receivedCallsDuration
+                               4.dialledCallsDuration
+                               5.clearTimers
+                       """;
+
+System.out.println (callDurationMenu);
+
+int callDuration = scanning.nextInt();
+
+
+switch (callDuration) {
+  
+            case 1:
+                System.out.println("lastCallDuration");
+                break;
+            case 2:
+                System.out.println("allCallsDuration");
+                break;
+            case 3:
+                System.out.println("receivedCallsDuration");
+                break;
+            case 4:
+                System.out.println("dialledCallsDuration");
+                break;
+            case 5:
+                System.out.println("clearTimes");
+                break;
+                default:
+                        System.out.println(" callDurationError");
+        }
+
+                break;
+             case 6:
+                System.out.println("showCallCosts");
+
+System.out.println ("PROMPTING YOU ENTER ANY NUMBER FROM 1 TO 3 TO CHOOSE CALL COSTS OPTIONS");
+
+String callCostsMenu =         """
+                               1.lastCallCost
+                               2.allCallsCost
+                               3.clearCounters
+                       """;
+
+System.out.println (callCostsMenu);
+
+int callCost = scanning.nextInt();
+
+
+switch (callCost) {
+  
+            case 1:
+                System.out.println("lastCallCost");
+                break;
+            case 2:
+                System.out.println("allCallsCost");
+                break;
+            case 3:
+                System.out.println("clearCounters");
+                break;
+            
+                default:
+                        System.out.println(" callcostsError");
+        }
+
+break;
+             case 7:
+                System.out.println("callCostSettings");
+
+System.out.println ("PROMPTING YOU ENTER ANY NUMBER FROM 1 TO 2 TO CHOOSE CALL COST SETTINGS");
+
+String callCostSettingsMenu =         """
+                               1.callCostLimit
+                               2.showCostsin
+                               """;
+
+System.out.println (callCostSettingsMenu);
+
+int callCostSettings = scanning.nextInt();
+
+
+switch (callCostSettings) {
+  
+            case 1:
+                System.out.println("callCostLimit");
+                break;
+            case 2:
+                System.out.println("showCostsin");
+                break;
+                default:
+                        System.out.println(" callCostSettingsError");
+        }
+
+                break;
+             case 8:
+                System.out.println("prepaidCredit");
+
+                break;
+
+                default:
+                        System.out.println("callRegisterError");
+        }
 break;
 case 5: System.out.println("TONES");
 break;
@@ -354,8 +497,6 @@ default: System.out.println("Error: invalid status");
 }
 } 
 }
-
-
 
 
 
