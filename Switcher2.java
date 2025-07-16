@@ -191,10 +191,95 @@ switch (settings) {
   
             case 1:
                 System.out.println("callSettings");
+
+System.out.println ("PROMPTING YOU ENTER ANY NUMBER FROM 1 TO 4 TO CHOOSE PREFERRABLE CALLSETTINGS");
+
+String callSettingsMenu =         """
+                               1.choseCallSettings
+                               2.automaticRedial
+                               3.speedDialing
+                               4.callWaitingOptions
+                               5.ownNumberSending
+                               6.phoneLineinUse
+                               7.automaticAnswer
+                       """;
+
+System.out.println (callSettingsMenu);
+
+int callSettings = scanning.nextInt();
+
+
+switch (callSettings) {
+  
+            case 1:
+                System.out.println("callSettings");
+                break;
+            case 2:
+                System.out.println("automaticRedial");
+                break;
+            case 3:
+                System.out.println("speedDialing");
+                break;
+            case 4:
+                System.out.println("callWaitingOptions");
+                break;
+            case 5:
+                System.out.println("ownNumberSending");
+                break;
+            case 6:
+                System.out.println("phoneLineInUse");
+                break;
+             case 7:
+                System.out.println("automaticAnswer");
+                break;
+            
+                default:
+                        System.out.println(" LISTOFsettingsFUNCTIONS");
+        }
                 break;
             case 2:
                 System.out.println("phoneSettings");
+
+System.out.println ("PROMPTING YOU ENTER ANY NUMBER FROM 1 TO 6 TO SELECT PREFERRABLE PHONE SETTINGS");
+
+String phoneSettingsMenu =         """
+                               1.language
+                               2.cellInfoDisplay
+                               3.welcomeNote
+                               4.networkSelection
+                               5.lights
+                               6.confirmSimServiceSelection
+                       """;
+
+System.out.println (phoneSettingsMenu);
+
+int phoneSettings = scanning.nextInt();
+
+
+switch (phoneSettings) {
+  
+            case 1:
+                System.out.println("language");
                 break;
+            case 2:
+                System.out.println("cellInfoDisplay");
+                break;
+            case 3:
+                System.out.println("welcomeNote");
+                break;
+            case 4:
+                System.out.println("networkSelection");
+                break;
+            case 5:
+                System.out.println("lights2");
+                break;
+            case 6:
+                System.out.println("confirmSimServiceSelection");
+                break;
+                default:
+                        System.out.println(" phoneSettingsMenuError");
+        }
+  break;
             case 3:
                 System.out.println("securitySettings");
                 break;
@@ -225,5 +310,6 @@ default: System.out.println("Error: invalid status");
 }
 } 
 }
+
 
 
