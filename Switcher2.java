@@ -314,6 +314,59 @@ switch (callCostSettings) {
         }
 break;
 case 5: System.out.println("TONES");
+
+System.out.println ("PROMPTING YOU ENTER ANY NUMBER FROM 1 TO 9 TO SELECT TONE SETTINGS");
+
+String tonesMenu =         """
+                               1.ringingTone
+                               2.ringingVolume
+                               3.incomingCallAlert
+                               4. composer
+                               5. messageAlertTone
+                               6. keypadTones
+                               7. warningAndGameTones
+                               8. vibratingAlert
+                               9. screenSaver
+
+                               """;
+
+System.out.println (tonesMenu);
+
+int tones = scanning.nextInt();
+
+
+switch (tones) {
+  
+            case 1:
+                System.out.println("ringingTone");
+                break;
+            case 2:
+                System.out.println("ringingVolume");
+                break;
+            case 3:
+                System.out.println("incomingCallAlert");
+                break;
+            case 4:
+                System.out.println("composer");
+                break;
+            case 5:
+                System.out.println("messageAlertTone");
+                break;
+           case 6:
+                System.out.println("keypadTones");
+                break;
+           case 7:
+                System.out.println("warningAndGameTones");
+                break;
+           case 8:
+                System.out.println("vibratingAlert");
+                break;
+           case 9:
+                System.out.println("screenSaver");
+                break;
+      default:
+                        System.out.println(" tonesSettingsError");
+        }
 break;
 case 6: System.out.println("SETTINGS");
 
@@ -487,6 +540,44 @@ break;
 case 10: System.out.println("REMINDERS");
 break;
 case 11: System.out.println("CLOCK");
+System.out.println ("PROMPTING YOU ENTER ANY NUMBER FROM 1 TO 6 TO SET CLOCK");
+
+String clockMenu =         """
+                               1.alarmClock
+                               2.clockSettings
+                               3.dateSettings
+                               4.stopWatch
+                               5.countdownTimers
+                               6.autoUpdateofDateandTime
+                       """;
+
+System.out.println (clockMenu);
+
+int clock = scanning.nextInt();
+
+
+switch (clock) {
+  
+            case 1:
+                System.out.println("alarmClock");
+                break;
+            case 2:
+                System.out.println("clockSettings");
+                break;
+            case 3:
+                System.out.println("dateSettings");
+                break;
+            case 4:
+                System.out.println("stopWatch");
+                break;
+            case 5:
+                System.out.println("countdownTimer");
+             case 6:
+                System.out.println("autoUpdateOfDateAndTime");
+                break;
+                default:
+                        System.out.println(" clockError");
+        }
 break;
 case 12: System.out.println("PROFILES");
 break;
