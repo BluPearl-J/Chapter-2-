@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class Switcher2 {  
 public static void main (String [] args){
@@ -282,8 +283,51 @@ switch (phoneSettings) {
   break;
             case 3:
                 System.out.println("securitySettings");
+               
+System.out.println ("PROMPTING YOU TYPE ANY NUMBER FROM 1 TO 6 TO SELECT PREFERRABLE SECURITY SETTINGS");
+
+String securitySettingsMenu =    """
+                               1.pinCodeRequest
+                               2.callBarringService
+                               3.fixedDialing
+                               4.closedUserGroup
+                               5.phoneSecurity
+                               6.changeAccessCodes
+
+                                  """;
+
+System.out.println (securitySettingsMenu);
+
+int securitySettings = scanning.nextInt();
+
+switch (securitySettings) {
+  
+            case 1:
+                System.out.println("PINcodeRequest");
+                break;
+            case 2:
+                System.out.println("callBarringService");
+                break;
+            case 3:
+                System.out.println("fixedDialling");
                 break;
             case 4:
+                System.out.println("closedUserGroup");
+                break;
+            case 5:
+                System.out.println("phoneSecurity");
+                break;
+            case 6:
+                System.out.println("changeAccessCodes");
+                break;
+
+            default:
+                        System.out.println(" securitySettingsMenuError");
+        }
+
+        break;
+
+  case 4:
                 System.out.println("restoreFactorySettings");
                 break;
             
@@ -310,6 +354,8 @@ default: System.out.println("Error: invalid status");
 }
 } 
 }
+
+
 
 
 
