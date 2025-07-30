@@ -14,7 +14,7 @@ print(get_divisor(13))
 print(get_divisor(19))
 
 
-
+#print(int(input("Enter any number":)))
 
 
 #create function so that if nos divisible by 5, retrurnts its square root
