@@ -2,15 +2,16 @@ from unittest import TestCase
 import function_snacks
 		
 class TestSnacksFunction(TestCase): 
-        def test_that_function_snacks_function_exists(self):
-                function_snacks.get_divisor(10)
-def test_get_divisor_returns_valid_result(self):
-		result = function_snacks.get_divisor(13)
-		self.assertEqual(result, 3)
+ def test_that_function_snacks_function_exists(self):
+  function_snacks.get_divisor(10)
+
+ def test_get_divisor_returns_valid_result(self):
+  result = function_snacks.get_divisor(13)
+  self.assertEqual(result, 3)
 		
-def test_get_divisor_returns_valid_result(self):
-		result = function_snacks.get_divisor(19)
-		self.assertEqual(result, 4)
+ def test_get_divisor_returns_valid_result(self):
+  result = function_snacks.get_divisor(19)
+  self.assertEqual(result, 4)
 
 		
 
