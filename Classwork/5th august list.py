@@ -14,4 +14,6 @@ for name in new_list:
  print()
  print()
  print(new_list[2])
+ for index in range(-4,0):
+  print(new_list[index])
  
