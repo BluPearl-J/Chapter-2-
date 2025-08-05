@@ -11,3 +11,7 @@ for name in new_list:
  print(new_list[-1])
  print(new_list[-3])
  print(new_list[-4])
+ print()
+ print()
+ print(new_list[2])
+ 
