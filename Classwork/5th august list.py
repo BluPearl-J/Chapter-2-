@@ -16,4 +16,11 @@ for name in new_list:
  print(new_list[2])
  for index in range(-4,0):
   print(new_list[index])
- 
+  print(new_list[2])
+new_list.append("priest")
+new_list.append("Makaveli")
+print(new_list)
+new_list.insert(4,"priest")
+#insert takes two 2 arguments
+new_list.insert(2,"cat")
+new_list.insert(5,"goat")
