@@ -11,3 +11,4 @@ print("The median is",+ statistics.median(values))
 print("The mode is",+ statistics.mode(values))
 
 my_array=[ 9, 11, 22, 34, 17, 22, 34, 22, 40]
+#suppose values include another 34,34 and 22 will appear equal number of times.a tie for the mode
