@@ -1,0 +1,26 @@
+#What does the following program print?
+#for row in range(10):
+#for column in range(10):
+#print('<' if row % 2 == 1 else '>', end='')
+#print()
+#3.4 (Fill in the Missing Code) 
+row % 2 == 1 conditionsal statement check if the row number is odd.
+
+If odd, it prints < ten times.
+
+If even, it prints the string > ten times.
+
+end='' prints characters on the same line.
+
+print() after the inner loop moves to the next line. equivalent to println in java
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<
+
