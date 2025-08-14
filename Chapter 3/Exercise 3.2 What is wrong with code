@@ -1,0 +1,8 @@
+#(What’s Wrong with This Code?) What is wrong with the following code?
+#a = b = 7
+#print('a =', a, '\nb =', b)
+#First, answer the question, then check your work in an IPython session
+
+#Answer
+#Nothing is wrong with the code it simply declates two variables viz; Variable named A and variabble named B of equal value 
+#Output is a=7 b=7
