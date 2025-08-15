@@ -21,3 +21,9 @@ example
 calcyulate-change 75
 
  print("your change is",change)
+
+
+3.21
+penny=1cent
+dime=10cent
+quarter=25cent
