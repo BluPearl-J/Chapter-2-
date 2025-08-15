@@ -1,0 +1,25 @@
+
+#3.4
+#(Fill the Code) In the code below 
+#for ***:
+# for ***:
+# print('@')
+# print()
+#replace the *** so that when you execute the code, it displays two rows, each containing
+#seven @ symbols, as in:
+#@@@@@@@
+@@@@@@
+
+
+
+To display two rows, of seven @ symbols each, nested loops:
+
+The outer loop  runs 2 times (for the two rows)
+
+The inner loop  runs 7 times (to print seven  symbols per row)
+
+for i in range(2):
+    for j in range(7):
+        print('@', end='')
+    print()
+range(2) → runs the outer loop twice (for two rows)
